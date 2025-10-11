@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+</head>
+<body>
+    <header>
+        <h1>Completa el formulario</h1>
+        <nav>
+             <a href="Acercade.html" target="_blank">Volver a la página principal</a></li>            
+        </nav>
+    </header>
+        
+        <form>
+            <label>Nombre:</label>
+            <p><input type="text" name="nombre" required maxlength="20"></p>
+            
+            <label>Apellido:</label>
+            <p><input type="text" name="apellido" required maxlength="20"></p>
+        
+            <label>Correo Electrónico:</label>
+            <p><input type="email" name="email" required maxlength="50" value="@"></p>
+        
+            <label>Teléfono:</label>
+            <p><input type="numero" name="telefono" required maxlength="15" onclick=this.value="" pattern="[0-9]{4}-[2-9]{2}-[0-9]{6}" placeholder="290-15-000000"></p>
+        
+            <label>Edad:</label>
+            <p><input type="numero" name="edad"  min="16" max="120" value="16"></p>
+        
+            <label>Dirección:</label>
+            <p><textarea id="direc" stext" name="dirección" rows="3" cols="30" placeholder="Ingrese su dirección aquí..."></textarea></p>
+            
+        
+            <label>Provincia:</label>
+            <p><input type="text" name="provincia"></p>
+        
+            <Label>Seleccione Provincia de la Patagonia:</Label>
+            <p><select "provincia">
+                    <option value="La Pampa">La Pampa</option>
+                    <option value="Neuquén">Neuquén</option>
+                    <option value="Río Negro">Río Negro</option>
+                    <option value="Chubut">Chubut</option>
+                    <option value="Santa Cruz">Santa Cruz</option>
+                    <option value="Tierra del Fuego">Tierra del Fuego</option></select></p>
+            
+            <label>Código Postal:</label>
+            <p><input type="text" name="Código Postal" pattern="[A-Za-z0-9]" placeholder="A1234ABC"></p>
+        <fieldset>
+            <legend>Método de preferencia de contacto:</legend>
+            <input type="radio" name="correo" checked="" value="1">Correo Electrónico
+            <input type="radio" name="coreo postal" value="2">Correo Postal
+            <input type="radio" name="telefono" value="3">Teléfono
+        </fieldset>
+        
+        <fieldset>
+            <legend>Metodo de preferencia de suscripción</legend>
+            <input type="checkbox" name="noticias" value="1">Noticias
+            <input type="checkbox" name="promociones" value="2">Promociones
+            <input type="checkbox" name="alertas" value="3" checked="">alertas
+            <input type="checkbox" name="eventos" value="4">Eventos
+        </fieldset>
+        
+        <p><button type=”button” onclick="alert('Bienvenidos a mi mundo!')" name=”pulsame” value=”Pulsame”>Presione aquí! </button></p>
+
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Datos personales</th>
+                <th>Valores</th>
+            </tr>
+        </thead>
+        <tbody>
+     
+            <tr>
+                <td >Nombre</td>
+                <td ></td>
+            </tr>
+                <td>Apellido</td>
+                <td></td>
+            </tr>
+                <td>Email</td>
+                <td></td>
+            </tr>
+                <td>Teléfono</td>
+                <td></td>
+            </tr>
+                <td>Edad</td>
+                <td></td>   
+            </tr>
+                <td>Dirección</td>
+                <td></td>
+            </tr>
+                <td>Provincia</td>
+                <td></td>
+            </tr>
+                <td>Código Postal</td>
+                <td></td>
+            </tr>
+        </tbody>
+    
+    </table>
+
+
+
+
+
+
+
+
+
+
+</body>
