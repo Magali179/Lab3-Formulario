@@ -38,7 +38,7 @@ input[type="email"] {
 
 }
 
-input[type="numero"] {
+input[type="number"] {
     width: 100%;
     padding: 8px;
     box-sizing: border-box;
